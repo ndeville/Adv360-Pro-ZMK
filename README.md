@@ -1,6 +1,6 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
-> 2024-01-16 06:42 2nd test with v3.0 repo, now in ndeville
+> 2024-01-16 06:44 2nd test with v3.0 repo, now in ndeville
 
 ## Modifying the keymap
 
