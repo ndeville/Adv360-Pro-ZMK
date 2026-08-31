@@ -36,23 +36,23 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
 /* Computer switch: send the Dell input-switch hotkey to the machine
  * being left (it still owns the DDC path), pause so the HID report
- * gets out over BT, then hop profile. Hotkeys are Ctrl+Opt+Cmd+A/S/D
+ * gets out over BT, then hop profile. Hotkeys are Ctrl+Opt+Cmd+1/2/3
  * mapped in BetterDisplay on all three machines. */
 sw_studio: sw_studio{
 compatible = "zmk,behavior-macro";
 label = "sw_studio";
 #binding-cells = <0>;
-bindings = <&kp LC(LA(LG(A)))>, <&macro_wait_time 300>, <&bt BT_SEL 0>;
+bindings = <&kp LC(LA(LG(N1)))>, <&macro_wait_time 300>, <&bt BT_SEL 0>;
 };
 sw_mini: sw_mini{
 compatible = "zmk,behavior-macro";
 label = "sw_mini";
 #binding-cells = <0>;
-bindings = <&kp LC(LA(LG(S)))>, <&macro_wait_time 300>, <&bt BT_SEL 1>;
+bindings = <&kp LC(LA(LG(N2)))>, <&macro_wait_time 300>, <&bt BT_SEL 1>;
 };
 sw_kmbp: sw_kmbp{
 compatible = "zmk,behavior-macro";
 label = "sw_kmbp";
 #binding-cells = <0>;
-bindings = <&kp LC(LA(LG(D)))>, <&macro_wait_time 300>, <&bt BT_SEL 2>;
+bindings = <&kp LC(LA(LG(N3)))>, <&macro_wait_time 300>, <&bt BT_SEL 2>;
 };
